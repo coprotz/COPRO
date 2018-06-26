@@ -2,7 +2,7 @@ body{
 	margin:0;
 	padding:0;
 	}
-#page, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #page12, #page13, #page14, #page15, #page16, #page17, #page18, #page19, #page20, #page21, #page22, #page23, #page24{
+#page, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #page12, #page13, #page14, #page15, #page16, #page17, #page18, #page19, #page20, #page21, #page22, #page23, #page24, #page25, #page26, #page27, #page28, #page29, #page30, #page31, #page32, #page33, #page34, #page35, #page36, #page37, #page38, #page39, #page40, #page41, #page42, #page43, #page44, #page45, #page46, #page47, #page48, #page49, #page50, #page51, #page52, #page53, #page54, #page55, #page56, #page57, #page58, #page59, #page60, #page61, #page62, #page63, #page64, #page65, #page66, #page67, #page68, #page69, #page70, #page71, #page72, #page73, #page74, #page75, #page76, #page77, #page78, #page79, #page80, #page81, #page82, #page83, #page84, #page85, #page86, #page87{
 	background:url(../images/thumbnails/BG2.png) repeat;
 	}
 	
@@ -73,7 +73,7 @@ body{
 #page .mainmenu li a:hover{
 	background:rgba(255,255,255,.9)}
 	
-#page .footerBG, #page2 .footerBG, #page3 .footerBG, #page4 .footerBG, #page5 .footerBG, #page6 .footerBG, #page7 .footerBG, #page8 .footerBG, #page9 .footerBG, #page10 .footerBG, #page11 .footerBG, #page12 .footerBG, #page13 .footerBG, #page14 .footerBG, #page15 .footerBG, #page16 .footerBG, #page17 .footerBG, #page18 .footerBG, #page19 .footerBG, #page20 .footerBG, #page21 .footerBG, #page22 .footerBG, #page23 .footerBG, #page24 .footerBG{
+#page .footerBG, #page2 .footerBG, #page3 .footerBG, #page4 .footerBG, #page5 .footerBG, #page6 .footerBG, #page7 .footerBG, #page8 .footerBG, #page9 .footerBG, #page10 .footerBG, #page11 .footerBG, #page12 .footerBG, #page13 .footerBG, #page14 .footerBG, #page15 .footerBG, #page16 .footerBG, #page17 .footerBG, #page18 .footerBG, #page19 .footerBG, #page20 .footerBG, #page21 .footerBG, #page22 .footerBG, #page23 .footerBG, #page24 .footerBG, #page25 .footerBG, #page26 .footerBG, #page27 .footerBG, #page28 .footerBG, #page29 .footerBG, #page30 .footerBG, #page31 .footerBG, #page32 .footerBG, #page33 .footerBG, #page34 .footerBG, #page35 .footerBG, #page36 .footerBG, #page37 .footerBG, #page38 .footerBG, #page39 .footerBG, #page16 .footerBG, #page17 .footerBG, #page18 .footerBG, #page40 .footerBG, #page41 .footerBG, #page42 .footerBG, #page43 .footerBG, #page44 .footerBG, #page45 .footerBG, #page46 .footerBG, #page47 .footerBG, #page48 .footerBG, #page49 .footerBG, #page50 .footerBG, #page51 .footerBG, #page52 .footerBG, #page53 .footerBG, #page54 .footerBG, #page55 .footerBG, #page56 .footerBG, #page57 .footerBG, #page58 .footerBG, #page59 .footerBG, #page60 .footerBG, #page61 .footerBG, #page62 .footerBG, #page63 .footerBG, #page64 .footerBG, #page65 .footerBG, #page66 .footerBG, #page67 .footerBG, #page68 .footerBG, #page69 .footerBG, #page70 .footerBG, #page71 .footerBG, #page72 .footerBG, #page73 .footerBG, #page74 .footerBG, #page75 .footerBG, #page76 .footerBG, #page77 .footerBG, #page33 .footerBG, #page34 .footerBG, #page35 .footerBG, #page36 .footerBG, #page78 .footerBG, #page79 .footerBG, #page80 .footerBG, #page81 .footerBG, #page82 .footerBG, #page83 .footerBG, #page84 .footerBG, #page85 .footerBG, #page86 .footerBG, #page87 .footerBG, #page88 .footerBG, #page89 .footerBG{
 	width:100%;
 	height:50px;
 	background:#808080;
@@ -121,7 +121,7 @@ body{
 	text-align:center;
 	}
 	
-#page2 .bodyCopy, #page3 .bodyCopy, #page4 .bodyCopy, #page5 .bodyCopy, #page6 .bodyCopy, #page7 .bodyCopy, #page8 .bodyCopy, #page9 .bodyCopy, #page10 .bodyCopy, #page11 .bodyCopy, #page12 .bodyCopy, #page13 .bodyCopy, #page14 .bodyCopy, #page15 .bodyCopy, #page16 .bodyCopy, #page17 .bodyCopy, #page18 .bodyCopy, #page19 .bodyCopy, #page20 .bodyCopy, #page21 .bodyCopy, #page22 .bodyCopy{
+#page2 .bodyCopy, #page3 .bodyCopy, #page4 .bodyCopy, #page5 .bodyCopy, #page6 .bodyCopy, #page7 .bodyCopy, #page8 .bodyCopy, #page9 .bodyCopy, #page10 .bodyCopy, #page11 .bodyCopy, #page12 .bodyCopy, #page13 .bodyCopy, #page14 .bodyCopy, #page15 .bodyCopy, #page16 .bodyCopy, #page17 .bodyCopy, #page18 .bodyCopy, #page19 .bodyCopy, #page20 .bodyCopy, #page21 .bodyCopy, #page22 .bodyCopy, #page23 .bodyCopy, #page24 .bodyCopy, #page25 .bodyCopy, #page26 .bodyCopy, #page27 .bodyCopy, #page28 .bodyCopy, #page29 .bodyCopy, #page30 .bodyCopy, #page31 .bodyCopy, #page32 .bodyCopy, #page33 .bodyCopy, #page34 .bodyCopy, #page35 .bodyCopy, #page36 .bodyCopy, #page37 .bodyCopy, #page38 .bodyCopy, #page39 .bodyCopy, #page40 .bodyCopy, #page41 .bodyCopy, #page42 .bodyCopy, #page43 .bodyCopy, #page44 .bodyCopy, #page45 .bodyCopy, #page46 .bodyCopy, #page47 .bodyCopy, #page48 .bodyCopy, #page49 .bodyCopy, #page50 .bodyCopy, #page51 .bodyCopy, #page52 .bodyCopy, #page53 .bodyCopy, #page54 .bodyCopy, #page41 .bodyCopy, #page55 .bodyCopy, #page56 .bodyCopy,#page57 .bodyCopy, #page58 .bodyCopy, #page59 .bodyCopy, #page60 .bodyCopy, #page61 .bodyCopy, #page62 .bodyCopy, #page63 .bodyCopy, #page64 .bodyCopy, #page65 .bodyCopy, #page66 .bodyCopy, #page67 .bodyCopy, #page68 .bodyCopy, #page69 .bodyCopy, #page70 .bodyCopy{
 	background:rgba(255,255,255,.6);
 	border-radius:5px;
 	margin:10px;
