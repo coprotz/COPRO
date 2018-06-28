@@ -121,7 +121,7 @@ body{
 	text-align:center;
 	}
 	
-#page2 .bodyCopy, #page3 .bodyCopy, #page4 .bodyCopy, #page5 .bodyCopy, #page6 .bodyCopy, #page7 .bodyCopy, #page8 .bodyCopy, #page9 .bodyCopy, #page10 .bodyCopy, #page11 .bodyCopy, #page12 .bodyCopy, #page13 .bodyCopy, #page14 .bodyCopy, #page15 .bodyCopy, #page16 .bodyCopy, #page17 .bodyCopy, #page18 .bodyCopy, #page19 .bodyCopy, #page20 .bodyCopy, #page21 .bodyCopy, #page22 .bodyCopy, #page23 .bodyCopy, #page24 .bodyCopy, #page25 .bodyCopy, #page26 .bodyCopy, #page27 .bodyCopy, #page28 .bodyCopy, #page29 .bodyCopy, #page30 .bodyCopy, #page31 .bodyCopy, #page32 .bodyCopy, #page33 .bodyCopy, #page34 .bodyCopy, #page35 .bodyCopy, #page36 .bodyCopy, #page37 .bodyCopy, #page38 .bodyCopy, #page39 .bodyCopy, #page40 .bodyCopy, #page41 .bodyCopy, #page42 .bodyCopy, #page43 .bodyCopy, #page44 .bodyCopy, #page45 .bodyCopy, #page46 .bodyCopy, #page47 .bodyCopy, #page48 .bodyCopy, #page49 .bodyCopy, #page50 .bodyCopy, #page51 .bodyCopy, #page52 .bodyCopy, #page53 .bodyCopy, #page54 .bodyCopy, #page41 .bodyCopy, #page55 .bodyCopy, #page56 .bodyCopy,#page57 .bodyCopy, #page58 .bodyCopy, #page59 .bodyCopy, #page60 .bodyCopy, #page61 .bodyCopy, #page62 .bodyCopy, #page63 .bodyCopy, #page64 .bodyCopy, #page65 .bodyCopy, #page66 .bodyCopy, #page67 .bodyCopy, #page68 .bodyCopy, #page69 .bodyCopy, #page70 .bodyCopy{
+#page2 .bodyCopy, #page3 .bodyCopy, #page4 .bodyCopy, #page5 .bodyCopy, #page6 .bodyCopy, #page7 .bodyCopy, #page8 .bodyCopy, #page9 .bodyCopy, #page10 .bodyCopy, #page11 .bodyCopy, #page12 .bodyCopy, #page13 .bodyCopy, #page14 .bodyCopy, #page15 .bodyCopy, #page16 .bodyCopy, #page17 .bodyCopy, #page18 .bodyCopy, #page19 .bodyCopy, #page20 .bodyCopy, #page21 .bodyCopy, #page22 .bodyCopy, #page23 .bodyCopy, #page24 .bodyCopy, #page25 .bodyCopy, #page26 .bodyCopy, #page27 .bodyCopy, #page28 .bodyCopy, #page29 .bodyCopy, #page30 .bodyCopy, #page31 .bodyCopy, #page32 .bodyCopy, #page33 .bodyCopy, #page34 .bodyCopy, #page35 .bodyCopy, #page36 .bodyCopy, #page37 .bodyCopy, #page38 .bodyCopy, #page39 .bodyCopy, #page40 .bodyCopy, #page41 .bodyCopy, #page42 .bodyCopy, #page43 .bodyCopy, #page44 .bodyCopy, #page45 .bodyCopy, #page46 .bodyCopy, #page47 .bodyCopy, #page48 .bodyCopy, #page49 .bodyCopy, #page50 .bodyCopy, #page51 .bodyCopy, #page52 .bodyCopy, #page53 .bodyCopy, #page54 .bodyCopy, #page41 .bodyCopy, #page55 .bodyCopy, #page56 .bodyCopy,#page57 .bodyCopy, #page58 .bodyCopy, #page59 .bodyCopy, #page60 .bodyCopy, #page61 .bodyCopy, #page62 .bodyCopy, #page63 .bodyCopy, #page64 .bodyCopy, #page65 .bodyCopy, #page66 .bodyCopy, #page67 .bodyCopy, #page68 .bodyCopy, #page69 .bodyCopy, #page70 .bodyCopy, #page71 .bodyCopy, #page72 .bodyCopy, #page73 .bodyCopy, #page74 .bodyCopy, #page75 .bodyCopy, #page76 .bodyCopy, #page77 .bodyCopy, #page78 .bodyCopy, #page79 .bodyCopy, #page80 .bodyCopy{
 	background:rgba(255,255,255,.6);
 	border-radius:5px;
 	margin:10px;
@@ -259,6 +259,70 @@ p .style{
 	
 #sorry h1{
 	font-size:35px;}
+	
+.machine-name{
+	border-bottom:1px solid #959595;
+	border-top:1px solid #959595;
+	height:30px;
+	}
+	
+.machine-name h4{
+	float:left;
+	padding:5px;
+	margin:0;}
+	
+.machine-name p{
+	float:right;
+	padding:5px;
+	margin:0;}
+	
+.search{
+	padding:10px 80px;}
+	
+.equip{
+	margin:5px;
+	padding:5px;
+	border-radius:7px;
+	z-index:5px;
+	background:rgba(255,255,255,.3);
+	box-shadow:3px 3px 15px #666;
+	
+	}
+	
+.equip img{
+	margin: 15px auto auto 1px;
+	border-radius:6px;
+	box-shadow:3px 3px 15px #666;}
+	
+.ui-block-b h4, h5, h6{
+	margin:0;
+	padding:2px;
+	}
+	
+.ui-block-a h4, h5, h6{
+	margin:0;
+	padding:0;
+	text-align:center;
+	}
+
+		
+.style6{
+	padding-left:10px;
+	display:block;
+	background:#666;
+	margin-left:20px;
+	border-radius:3px;
+	color:#f4f4f4;
+	text-shadow:none;
+	border-bottom:1px solid #CCC;
+	width:70%;
+	}
+	
+.style6 a{
+	text-decoration:none;
+	color:#009;
+	text-align:center;
+	}
 
 		
 		

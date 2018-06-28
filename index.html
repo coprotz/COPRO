@@ -29,10 +29,12 @@ a:active {
 	color: #999999;
 }
 </style>
-
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationPassword.css" rel="stylesheet" type="text/css">
 <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
-
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationPassword.js" type="text/javascript"></script>
 </head> 
 <body> 
 
@@ -320,70 +322,62 @@ a:active {
   <div data-role="content" class="bodyCopy"><h3>Local Fundis Categories</h3>
     <ul data-role="listview" data-inset="true">
       <li><a href="#page11">
-        <h3>View All</h3>
-        <p>Total 100,000</p>
-      </a></li>
-      <li><a href="#page11">
         <h3>Masonry</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page58">
         <h3>Painters</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page59">
         <h3>Steel Fixers</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page60">
         <h3>Plumbers</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page61">
         <h3>Roof Covers</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page62">
         <h3>Terrazzo</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page63">
         <h3>Welders</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page64">
         <h3>Carpenters & Joiners</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page65">
         <h3>Tiles</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
-        <h3>Welders</h3>
-        <p>Total 23,000</p>
-      </a></li>
-      <li><a href="#page11">
+      <li><a href="#page66">
         <h3>TV Cabling</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page67">
         <h3>Alucobond</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page68">
         <h3>Drewa</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page69">
         <h3>Electricians</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page70">
         <h3>Data & Voice</h3>
         <p>Total 23,000</p>
       </a></li>
-      <li><a href="#page11">
+      <li><a href="#page71">
         <h3>Security System</h3>
         <p>Total 23,000</p>
       </a></li>
@@ -441,10 +435,17 @@ a:active {
                 <option>Arusha</option>
                 <option>Mwanza</option>
             </select>
+            <select name="ward">
+            	<option>Select Ward</option>
+                <option>Bunju</option>
+                <option>Kipawa</option>
+                <option>Mbagala</option>
+            </select>
            </div>
+           <input type="text" name="year" placeholder="Year of Birth YYYY" class="style2"> 
             <input type="text" name="phone1" placeholder="Phone 1" class="style2" >
 			<div class="submit">
-             <select class="style1" name="skills" class="style1">
+             <select name="skills">
             	<option>Select Skill 1</option>
                 <option>Masonry</option>
                 <option>Painter</option>
@@ -466,15 +467,31 @@ a:active {
                 <option>Roof Covering</option>
             </select>
            </div>
-          <input type="text" name="expe" placeholder="Years of Experience" class="style2">
-  			<input type="password" name="pass" placeholder="Password" class="style2">
+          	<div class="submit">
+           
+              <select name="experience">
+              	<option>Experience(yrs)</option>
+               	<option>1yr</option>
+               	<option>2yrs</option>
+               	<option>3yrs</option>
+               	<option>4yrs</option>
+               	<option>5yrs</option>
+               	<option>6yrs</option>
+               	<option>7yrs</option>
+               	<option>8yrs</option>
+               	<option>9yrs</option>
+               	<option>10yrs</option>
+               	<option>11yrs</option>
+             </select>
+            </div>
+     		<input type="password" name="pass" placeholder="Password" class="style2">
 		<input type="password" name="pass2" placeholder="Confirm Password" class="style2">
         <h5>Upload Fundis's Image</h5><input type="file" name="pic">
         <div id="image"></div>
         
         <div class="submit">
 			
-			<input type="submit" name="submit" value="Register" class="style1">
+			<input type="submit" name="submit" value="Register" class="style1" data-icon="plus">
         
         </div>
         
@@ -506,13 +523,52 @@ a:active {
 
   <div data-role="content" class="bodyCopy"><h3>Paints & Decorations- Subcategories</h3>
     <div data-role="collapsible-set">
+      
       <div data-role="collapsible">
-        <h3>All Paints & Decorations</h3>
-        <p>Content</p>
-      </div>
-      <div data-role="collapsible" data-collapsed="true">
         <h3>Silky</h3>
-        <p>Content</p>
+        <div class="machine-name">
+            <h4>23 Items</h4><p>Silk</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/products/buck1.jpg" width="100%" height="150px" alt="Planets">
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h5>Price: 80,000TZS</h5><br>
+                    <h5>20Ltrs Bucket</h5>
+                    <h4>Silk Paints</h4>
+                    <h6><a href="">Goldstar Paints Tanzania</a></h6><br>
+                    <h5>Mr Joram Kashinde</h5>
+                    <h6>Director.</h6>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/products/buck1.jpg" width="100%" height="150px" alt="Planets">
+                  </div>
+          
+                  <div class="ui-block-b">
+                   <h5>Price: 80,000TZS</h5><br>
+                    <h5>20Ltrs Bucket</h5>
+                    <h4>Silk Paints</h4>
+                    <h6><a href="">Goldstar Paints Tanzania</a></h6><br>
+                    <h5>Mr Joram Kashinde</h5>
+                    <h6>Director.</h6>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+  
       </div>
       <div data-role="collapsible" data-collapsed="true">
         <h3>Weatherguards</h3>
@@ -560,49 +616,55 @@ a:active {
 		<div id="logo"></div>
     </div>
   	<div class="greyline"></div>
-  <div data-role="content" class="bodyCopy"><h3>All Fundis</h3>
-  <p>Total 234,000</p>
-  
-   <div id="profile">
-         
-             <div class="profile">
-                <div id="pic">
-                  <img src="images/thumbnails/constantino.png" alt="Planets">
-                </div>
-                  <h4>Juma Bombe(32)</h4>
-                  <h5>Carpentry (2yrs)</h5>
-                  <h5>Welder 5yrs)</h5>
-                  <h5>0789990088</h5>
-                  <h5>0767889900</h5>
-                  <h4>Arusha</h4>
-                  <h5>Semanjiro</h5>
-            </div>
-            <div class="profile">
-                <div id="pic">
-                  <img src="images/thumbnails/constantino.png" alt="Planets">
-                </div>
-                  <h4>Juma Bombe(32)</h4>
-                  <h5>Carpentry (2yrs)</h5>
-                  <h5>Welder 5yrs)</h5>
-                  <h5>0789990088</h5>
-                  <h5>0767889900</h5>
-                  <h4>Arusha</h4>
-                  <h5>Semanjiro</h5>
-            </div>
-            <div class="profile">
-                <div id="pic">
-                  <img src="images/thumbnails/constantino.png" alt="Planets">
-                </div>
-                  <h4>Juma Bombe(32)</h4>
-                  <h5>Carpentry (2yrs)</h5>
-                  <h5>Welder 5yrs)</h5>
-                  <h5>0789990088</h5>
-                  <h5>0767889900</h5>
-                  <h4>Arusha</h4>
-                  <h5>Semanjiro</h5>
-            </div>
-    </div>
-  
+  <div data-role="content" class="bodyCopy"><h3>List of Masonry Fundis</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Masonry</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                    <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
       
   
   
@@ -618,7 +680,10 @@ a:active {
     </div>
   	<div class="greyline"></div>
   
-  <div data-role="content" class="bodyCopy"><h3>Display according to selection...</h3></div>
+  <div data-role="content" class="bodyCopy"><h3>Display according to selection...</h3>
+  
+  
+  </div>
    <div data-role="footer" class="footerBG">
     <h4><a href="#page4" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
   </div>
@@ -641,7 +706,7 @@ a:active {
   <div data-role="content" class="bodyCopy"><h3>Contact Us</h3>
     <div class="ui-grid-a">
        		<p class="footercontact">COPRO Tanzania<br>
-			<b class="phone"><a href="tel:067700001" data-role="button" data-icon="tel">Call Us</a></b><br><br>
+			<b class="phone"><a href="tel:0677700001" data-role="button" data-icon="tel">Call Us: 0677 700 001</a></b><br><br>
 			Bungoni Street, Ilala, Dar es salaam<br></p>
         
       
@@ -690,14 +755,17 @@ a:active {
 		<form method="POST" id="forml">
 			<p>Username</p>
 			<div class="login">
-				<input type="text" name="username" placeholder="Enter Username">
-			</div>
+			  <span id="sprytextfield1">
+			  <input type="text" name="username" id="username" placeholder="Enter Your Username">
+		  <span class="textfieldRequiredMsg">A value is required.</span></span> </div>
 			<p>Password</p>
 			<div class="login">
-				<input type="password" name="password" placeholder="Enter Password">
-			</div>
+			  <span id="sprypassword1">
+				<input type="password" name="password" id="password" placeholder="Enter Your Password">
+		  <span class="passwordRequiredMsg">A value is required.</span></span> </div>
           <div class="login">
-			<input type="submit" name="submit" value="Login">
+            <input type="submit" value="Submit" data-icon="plus" />
+			
 			<a href="">Forget Password?</a>
   			</div>
   </form>
@@ -1646,7 +1714,56 @@ a:active {
 		<div id="logo"></div>
   </div>
   <div class="greyline"></div>
-  <div data-role="content" class="bodyCopy"><h3>List of Compactors</h3></div>
+      <div data-role="content" class="bodyCopy"><h3>List of Compactors</h3>
+        <div class="machine-name">
+            <h4>23 Items</h4><p>Compactors</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/equips/comp2.jpg" width="100%" height="150px" alt="Planets">
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h5>Rate: 80,000TZS Per Day</h5>
+                    <h4>XLT Model, 5 Ton</h4>
+                    <h6><a href="">ABC Engineering Co.</a></h6>
+                    <h5>Tanga</h5>
+                    <h5>Muheza</h5>
+                    <h5>Stendi Kuu</h5><br>
+                    <h5>Mr Joram Kashinde</h5>
+                    <h6>Director</h6>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/equips/comp2.jpg" width="100%" height="150px" alt="Planets">
+                  </div>
+          
+                  <div class="ui-block-b">
+                     <h5>Rate: 80,000TZS Per Day</h5>
+                    <h4>XLT Model, 5 Ton</h4>
+                    <h6><a href="">ABC Engineering Co.</a></h6>
+                    <h5>Tanga</h5>
+                    <h5>Muheza</h5>
+                    <h5>Stendi Kuu</h5><br>
+                    <h5>Mr Joram Kashinde</h5>
+                    <h6>Director</h6>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+  
+  
+  </div>
    <div data-role="footer" class="footerBG">
     <h4><a href="#page5" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
   </div>
@@ -1811,29 +1928,836 @@ a:active {
     <h4><a href="#page5" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
   </div>
 </div>
-<div data-role="page" id="page44">
+<div data-role="page" id="page58">
   <div class="header">
 		<div id="logo"></div>
     </div>
   	<div class="greyline"></div>
-  <div data-role="content" class="bodyCopy"><h3>Contact Us</h3>
-    <div class="ui-grid-a">
-      <div class="ui-block-a">Block 1,1</div>
-      <div class="ui-block-a">Block 2,1</div>
-      <div class="ui-block-a">Block 3,1</div>
-    </div>
-  
-  
-  
-  
-  </div>
+  <div data-role="content" class="bodyCopy"><h3>List of Painters</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Painters</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                    <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
    <div data-role="footer" class="footerBG">
-    <h4><a href="#page2" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page59">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Steel Fixers</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Steel Fixers</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                    <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page60">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Plumbers</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Plumbers</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                    <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page61">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Roof Covers</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Roof Covers</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                    <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page62">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Terrazzo</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Terrazzo</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                    <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page63">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Welders</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Welders</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                    <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page64">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Carpenters & Joiners</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Carpenters & Joiners</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                    <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page65">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Tiles</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Tiles</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page66">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of TV Cabling</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>TV Cabling</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page67">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Alucobond</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Alucobond</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page68">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Drewa</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Drewa</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                   <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page69">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Electricians</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Electricians</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
   </div>
 </div>
 
-
-
-
+<div data-role="page" id="page70">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Data & Voice</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Data & Voice</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                   <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<div data-role="page" id="page71">
+  <div class="header">
+		<div id="logo"></div>
+    </div>
+  	<div class="greyline"></div>
+  <div data-role="content" class="bodyCopy"><h3>List of Security System</h3>
+    <div class="machine-name">
+            <h4>23 Fundis</h4><p>Security System</p>
+        </div>
+        <div class="search">
+        <input type="search">
+        </div>
+        	<div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                    <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+            <div  class="equip">
+                <div class="ui-grid-a">
+                  <div class="ui-block-a">
+                    <img src="images/thumbnails/fundi/mgasha.png" width="85%" height="150px" alt="No Image">
+                    <h5>Available</h5>
+                  </div>
+          
+                  <div class="ui-block-b">
+                  <h4>Mgasha Mshuza(36)</h4>
+                   <h4>Tabora</h4>
+                    <h5>Nzega</h5>
+                    <h5>Saanane.</h5>
+                    <h6>Mabanda Mawili</h6>
+                    <h5>Masonry (5yrs)</h5>
+                    <h5>Other Skill:Welder (2yrs)</h5>
+                    <h4><a href="tel:0878667766">0878667766</a></h4>
+                    <h4><a href="tel:0712100100">0712100100</a></h4>
+                  </div>
+    
+    			</div>
+       		</div>
+        </div>
+   <div data-role="footer" class="footerBG">
+    <h4><a href="#page6" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword1");
+</script>
 </body>
 </html>
